@@ -1,18 +1,22 @@
 package org.example;
 import datastructures.Graph;
+import datastructures.WeightedGraph;
 
 public class Main {
     public static void main(String[] args) {
-        Graph<Integer> graph = new Graph<>();
-        graph.addEdge(1,2,true);
-        graph.addEdge(1,3,true);
-        graph.addEdge(2, 4,true);
-        graph.addEdge(2,5,true);
-        graph.addEdge(3,6,true);
-        graph.addEdge(3,7,true);
-        graph.addEdge(6,2,true);
-        graph.DFS(1);
-        System.out.println(graph.getEdgeCount());
-        System.out.println(graph.getVertexCount());
+        WeightedGraph<Character> graph=new WeightedGraph<>();
+        graph.addEdge('A','B',2,false);
+        graph.addEdge('A','D',8,false);
+        graph.addEdge('B','D',5,false);
+        graph.addEdge('B','E',6,false);
+        graph.addEdge('D','E',3,false);
+        graph.addEdge('D','F',2,false);
+        graph.addEdge('E','C',9,false);
+        graph.addEdge('E','F',1,false);
+        graph.addEdge('F','C',3,false);
+
+        System.out.println(graph.dijkstra('A'));
+
+
     }
 }
