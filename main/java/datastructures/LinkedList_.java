@@ -47,6 +47,17 @@ public class LinkedList_<T> {
         f=null;
     }
 
+    public T get(int index){
+        if (index<0 || index >=n){
+            return null;
+        }
+        Node<T> current =f;
+        for(int i=0; i<index;i++){
+            current=current.next;
+        }
+        return current.element;
+    }
+
     //O(1) because we keep in memory the last node
     public void add(T element){
         if( f==null){

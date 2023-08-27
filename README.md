@@ -21,4 +21,7 @@ The shortest path algorithm is a modified version of BFS. In addition to travers
 #### Dijkstra 
 Dijkstra's algorithm is a shortest-path algorithm used to find the shortest path from a starting node to all other nodes in a weighted graph. It maintains a set of unvisited nodes and continually selects the node with the smallest known distance, updating the distances to its neighbors. This process continues until all nodes have been visited, resulting in the shortest paths from the starting node to all others.
 
+## Linked List
+
+A linked list is a linear data structure comprising a series of elements, known as nodes. Each node contains data and a reference to the next node (optionally a reference to the previous node), forming a chain-like sequence. Linked lists offer efficient insertions and deletions at any point within the list. I implemented a  doubly linked lists, that is nodes point to both the next and previous elements.
 

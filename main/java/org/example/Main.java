@@ -12,10 +12,8 @@ public class Main {
         l.add(15);
         l.add(8,2);
         System.out.println(l);
-        System.out.println(l.size());
-        l.removeIndex(5);
-        System.out.println(l);
-        System.out.println(l.size());
+        System.out.println(l.get(5));
+
 
     }
 }
