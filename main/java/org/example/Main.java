@@ -1,19 +1,15 @@
 package org.example;
-import datastructures.Graph;
-import datastructures.LinkedList_;
-import datastructures.WeightedGraph;
+import datastructures.*;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList_<Integer> l=new LinkedList_<>();
-        l.add(2);
-        l.add(3);
-        l.add(14);
-        l.add(15);
-        l.add(8,2);
+       List<Integer> l=new ArrayList<>(List.of(1,56,8,-3,4,8,2,3,5,13));
+        Sort.QuickSort(l);
         System.out.println(l);
-        System.out.println(l.get(5));
-
 
     }
 }
